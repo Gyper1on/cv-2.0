@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* *{
+   padding: 0;
+   margin: 0;
+}  обнуление во всех классах*/
+
+body {
+   background-color: #a8a6a62c;
+   color: #000000d0;
+
+   font-size: 16px;
+   font-weight: normal;
+   font-family: 'Roboto', sans-serif;
+   font: normal 16px 'Roboto', sans-serif;
+
+}
+
+a {
+   color: #444343ac;
+   /* text-decoration: none; - убирание подчеркивание ссылки */
+   text-decoration: none;
+}
+
+/* a: :visited{} - цвет ссылки, которую мы уже посетили */
+
+
+/* hover - параметры наведения */
+a:hover {
+   text-decoration: underline;
+}
+
+/* a:visited {
+   color:green ;
+}  меняет цвет если человек уже посещал ссылку*/
+
+/* a:active {} - меняет цвет ссылки при зажатой кнопке мыши */
+
+a:active {
+   color: blue;
+}
+
+.avatar {
+   width: 200px;
+   border-radius: 100px;
+   box-shadow: 0px 9px 20px 0px rgba(0, 0, 0, 025);
+}
+.info {
+   display: flex;
+   margin-bottom: 20px;
+}
+.info p {
+   color: #444343ac;
+   margin: 0;
+   /*font-style:italic; ( курсив */
+   font-weight: bold;
+   /* жирность текста
+   /*text-decoration: none; ( зачеркнутый, подчеркнутый текст
+   /*text-transform: none; ( верхний, нижний регистр, все слова с большой*/
+   letter-spacing: 3px;
+   /* расстояние между буквами */
+   word-spacing: 15px;
+   /* расстояние между словами */
+   border-radius: 20px;
+   /* скругление границ блока */
+}
+.info-text {
+   margin-left: 20px;
+   margin-top: 40px;
+}
+
+/*box model*/
+.container {
+   color: #444343ac;
+   max-width: 750px;
+   /* максимальный размер содержимого сайта */
+   margin: auto;
+   /* контент блока по середине*/
+}
+
+.social {
+   color: #444343ac;
+   /* background: #ec0808; */
+   /* padding: 30px; внутренние отступы в блоке до контента */
+   /* padding: 15px 20px 25px 30px ;  задание отступов по часовой стрелке*/
+   border: 5px solid rgb(247, 252, 247);
+   border-top: 0px;
+   /*отступ сверху*/
+   border-right: 0px;
+   /*отступ справа*/
+   border-bottom: 5px;
+   /*отступ снизу*/
+   border-left: 0px;
+   /*отступ слева*/
+   border-radius: 20px;
+   /* скругление границ блока */
+   border-bottom-style: dotted;
+   /* изменение стиля границы  */
+   margin: 40px;
+   /* внешние отступы блока от других блоков */
+}
+
+.job {
+   color: #444343ac;
+   /* background: #ec0808; */
+   /* padding: 30px; внутренние отступы в блоке до контента */
+   padding-left: 0px;
+   padding-bottom: 25px;
+   border: 5px solid rgb(244, 248, 244);
+   border-top: 0px;
+   /*отступ сверху*/
+   border-right: 0px;
+   /*отступ справа*/
+   border-bottom: 5px;
+   /*отступ снизу*/
+   border-left: 0px;
+   /*отступ слева*/
+   border-radius: 20px;
+   /* скругление границ блока */
+   border-bottom-style: dotted;
+   margin: 20px;
+   /* внешние отступы блока от других блоков */
+}
+
+.seti {
+   text-align: center;
+}
+
+/* .box-model div {
+   float:left;
+   background: #000;
+   height: 200px;
+   width: 25%;
+   border: 4px solid red;
+   box-sizing: border-box; учитывает отступы каждого элемента 
+       при построении сетки в ряд на всю ширину
+
+} */
+
+.list {
+   list-style: none;
+   /*убирает нумерацию в списке*/
+}
+
+.list li {
+   margin-bottom: 0px;
+}
+
+.table {
+   width: 100%;
+}
+
+.table td {
+   padding-bottom: 10px;
+}
+
+.form-group label {
+   display: block;
+   font-size: 14px;
+   color: black;
+   text-align: center;
+}
+
+.form-group input,
+.form-group textarea{
+   width: 100%;
+   box-sizing: border-box;
+   border: none; /* обнуление всех границ*/
+   border-bottom: 1px solid #ccc;
+   color: black;
+   padding: 15px 0 10px;
+   font-family: inherit; /* наследование шрифта */
+   outline: none; /*подсветка границ выделения*/
+   background: transparent; /*применяет текст фона документа для инпута*/
+   text-align: center;
+}
+
+.btn {
+   background: rgb(0, 0, 0);
+   margin: 0 auto;/* ставит кнопку по центру*/
+   display: block;/* ставит кнопку по центру*/
+   color: #ccc;
+   border: none; /*убирает границы*/
+   font-family: inherit;
+   cursor: pointer;
+}
+.btn:hover{
+   opacity: 0.9;
+}
+
+/* .row {
+   display: flex;
+   margin-bottom: 20px;
+}
+.row > .form-group{
+   width: 50%;
+}
+.row > .form-group:first-child {
+   margin-right: 20px;
+} */
+/*  псевдоселектор, применяемый  к 2 и 3 столбцу
+.table td:nth-child(2),
+.table td:nth-child(3) {
+   color: aqua;
+} */
+
+/*  псевдоселектор, применяемый к нечетным строкам 
+.table tr:nth-child(odd){
+   background-color: antiquewhite;
+} */
+
+.contact h2{
+ text-align: center;
+}
+
+h1 {
+   color: black;
+}
+
+h2 {
+   color: rgba(0, 0, 0, 0.753);
+}
