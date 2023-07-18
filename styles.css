@@ -44,10 +44,12 @@ a:active {
    border-radius: 100px;
    box-shadow: 0px 9px 20px 0px rgba(0, 0, 0, 025);
 }
+
 .info {
    display: flex;
    margin-bottom: 20px;
 }
+
 .info p {
    color: #444343ac;
    margin: 0;
@@ -63,6 +65,7 @@ a:active {
    border-radius: 20px;
    /* скругление границ блока */
 }
+
 .info-text {
    margin-left: 20px;
    margin-top: 40px;
@@ -161,29 +164,37 @@ a:active {
 }
 
 .form-group input,
-.form-group textarea{
+.form-group textarea {
    width: 100%;
    box-sizing: border-box;
-   border: none; /* обнуление всех границ*/
+   border: none;
+   /* обнуление всех границ*/
    border-bottom: 1px solid #ccc;
    color: black;
    padding: 15px 0 10px;
-   font-family: inherit; /* наследование шрифта */
-   outline: none; /*подсветка границ выделения*/
-   background: transparent; /*применяет текст фона документа для инпута*/
+   font-family: inherit;
+   /* наследование шрифта */
+   outline: none;
+   /*подсветка границ выделения*/
+   background: transparent;
+   /*применяет текст фона документа для инпута*/
    text-align: center;
 }
 
 .btn {
    background: rgb(0, 0, 0);
-   margin: 0 auto;/* ставит кнопку по центру*/
-   display: block;/* ставит кнопку по центру*/
+   margin: 0 auto;
+   /* ставит кнопку по центру*/
+   display: block;
+   /* ставит кнопку по центру*/
    color: #ccc;
-   border: none; /*убирает границы*/
+   border: none;
+   /*убирает границы*/
    font-family: inherit;
    cursor: pointer;
 }
-.btn:hover{
+
+.btn:hover {
    opacity: 0.9;
 }
 
@@ -208,8 +219,8 @@ a:active {
    background-color: antiquewhite;
 } */
 
-.contact h2{
- text-align: center;
+.contact h2 {
+   text-align: center;
 }
 
 h1 {
